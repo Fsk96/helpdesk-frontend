@@ -1,16 +1,82 @@
-# React + Vite
+# 🖥️ HelpDesk Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend da aplicação HelpDesk desenvolvido em **React**, que consome a API em ASP.NET Core.  
+Permite autenticação e gestão completa de tickets.
 
-Currently, two official plugins are available:
+## 🚀 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Login e registo de utilizadores
+- Armazenamento de JWT no localStorage
+- Criação de tickets
+- Listagem de tickets
+- Visualização por ID
+- Edição de tickets
+- Apagar tickets
+- Proteção de rotas (PrivateRoute)
+- Logout
 
-## React Compiler
+## 🧰 Tecnologias
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- Axios
+- JavaScript (ES6+)
+- CSS
 
-## Expanding the ESLint configuration
+## 📦 Pré-requisitos
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Node.js (>= 18)
+- npm
+- Git
+
+## ⚙️ Configuração
+
+1. Clonar o repositório:
+
+
+git clone https://github.com/Fsk96/helpdesk-frontend.git
+cd helpdesk-frontend
+
+2. Instalar dependências:
+
+npm install
+
+3. Iniciar o projeto:
+
+npm run dev
+
+🔐 Autenticação
+
+Após login:
+
+O token JWT é guardado no localStorage
+
+Enviado automaticamente nos pedidos protegidos
+
+🧪 Utilização
+
+Registar utilizador
+
+Fazer login
+
+Criar e gerir tickets
+
+Editar ou apagar tickets
+
+Logout
+
+⚠️ Notas
+
+Projeto de demonstração/portfólio
+
+Configurações usam localhost e ambiente de desenvolvimento
+
+🗄️ Backend
+
+API usada por este frontend:
+👉 https://github.com/Fsk96/helpdeskapi
+
+👤 Autor
+
+João Fonseca
+Projeto de portfólio para demonstração de competências em desenvolvimento frontend com React.
